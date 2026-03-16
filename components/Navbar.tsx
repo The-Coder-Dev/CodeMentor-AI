@@ -48,21 +48,22 @@ function Navbar() {
 
           <Show when={"signed-in"}>
             <Button asChild className="bg-green/40 text-accent border border-green/20">
-                <Link href="/dashboard">Go to Dashboard</Link>
+              <Link href="/dashboard">Go to Dashboard</Link>
             </Button>
           </Show>
 
           <Show when={"signed-out"}>
             <div className="flex gap-2 items-center">
-              <Button>
-                Get Started
-              </Button>
 
-             <SignInButton >
+              <SignInButton >
                 <Link href="/" className="text-accent text-sm">
                   Sign In
                 </Link>
-             </SignInButton>
+              </SignInButton>
+              
+              <Button>
+                Get Started
+              </Button>
 
             </div>
           </Show>

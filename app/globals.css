@@ -1,11 +1,19 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+@import '@clerk/ui/themes/shadcn.css';
 
 @theme{
   --color-dark: #08070E; 
   --color-green: #00FFB2; 
   --color-accent: #F5F5F5; 
+
+}
+
+.bg-auth{
+  background-image: url('/authImage.webp');
+  background-position: center;
+  background-size: cover;
 }
 
 @custom-variant dark (&:is(.dark *));
