@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { ClerkProvider, SignIn } from '@clerk/nextjs'
 import { dark } from '@clerk/ui/themes'
 

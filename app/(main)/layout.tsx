@@ -10,7 +10,7 @@ export default function MainLayout({
     <>
       <Navbar />
 
-      <main className="min-h-screen container mx-auto">
+      <main className="min-h-screen w-full">
         {children}
       </main>
 

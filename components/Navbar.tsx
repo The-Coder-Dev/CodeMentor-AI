@@ -55,14 +55,16 @@ function Navbar() {
           <Show when={"signed-out"}>
             <div className="flex gap-2 items-center">
 
-              <SignInButton >
-                <Link href="/" className="text-accent text-sm">
+              <Button asChild className="text-accent bg-transparent hover:bg-transparent ">
+                <Link href="/sign-in" >
                   Sign In
                 </Link>
-              </SignInButton>
-              
-              <Button>
-                Get Started
+              </Button>
+
+              <Button asChild className="text-accent bg-green/30 hover:bg-green/20 transition-colors duration-300">
+                <Link href="/sign-up" >
+                  Get Started
+                </Link>
               </Button>
 
             </div>
