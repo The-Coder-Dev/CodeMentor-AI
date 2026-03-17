@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
-import { ClerkProvider, Show, SignIn, SignInButton } from "@clerk/nextjs";
+import { ClerkProvider, Show, SignIn, SignInButton, UserAvatar, UserButton } from "@clerk/nextjs";
 
 const links = [
   { title: "Home", url: "/", id: 1 },
@@ -47,9 +47,16 @@ function Navbar() {
           </div>
 
           <Show when={"signed-in"}>
-            <Button asChild className="bg-green/40 text-accent border border-green/20">
-              <Link href="/dashboard">Go to Dashboard</Link>
-            </Button>
+            <div className="flex items-center gap-3">
+              <Button
+                asChild
+                className="bg-green/40 text-accent border border-green/20"
+              >
+                <Link href="/dashboard">Go to Dashboard</Link>
+              </Button>
+
+              <UserButton />
+            </div>
           </Show>
 
           <Show when={"signed-out"}>

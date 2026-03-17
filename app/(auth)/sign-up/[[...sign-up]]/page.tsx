@@ -7,7 +7,7 @@ function SignUpPage() {
       <ClerkProvider appearance={{
         theme: dark,
       }}>
-        <SignUp />
+        <SignUp fallbackRedirectUrl={"/dashboard"} />
       </ClerkProvider>
     </section>
   )
