@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import {Inter } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
+import { ClerkProvider } from "@clerk/nextjs"
+import { dark } from "@clerk/ui/themes"
 
 
 const inter = Inter({
@@ -27,8 +27,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${inter.className} antialiased`}
+        
       >
-        {children}
+         <ClerkProvider appearance={{
+            theme: dark
+        }}>
+          {children}
+        </ClerkProvider>
       </body>
     </html>
   );
