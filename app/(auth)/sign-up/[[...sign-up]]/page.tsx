@@ -5,7 +5,7 @@ function SignUpPage() {
   return (
     <section className='w-fit  flex items-center justify-center '>
       
-        <SignUp fallbackRedirectUrl={"/dashboard"} />
+        <SignUp fallbackRedirectUrl={"/dashboard"} signInUrl='/sign-in'/>
       
     </section>
   )
