@@ -19,10 +19,6 @@ import {
   IconUsers,
 } from "@tabler/icons-react"
 
-// import { NavDocuments } from "@/components/nav-documents"
-// import { NavMain } from "@/components/nav-main"
-// import { NavSecondary } from "@/components/nav-secondary"
-// import { NavUser } from "@/components/nav-user"
 import {
   Sidebar,
   SidebarContent,
@@ -46,30 +42,15 @@ const data = {
   },
   navMain: [
     {
-      title: "Dashboard",
-      url: "#",
-      icon: IconDashboard,
-    },
-    {
-      title: "Lifecycle",
+      title: "AI Tutor",
       url: "#",
       icon: IconListDetails,
     },
     {
-      title: "Analytics",
+      title: "Code Visualizer",
       url: "#",
       icon: IconChartBar,
-    },
-    {
-      title: "Projects",
-      url: "#",
-      icon: IconFolder,
-    },
-    {
-      title: "Team",
-      url: "#",
-      icon: IconUsers,
-    },
+    }
   ],
   navClouds: [
     {
@@ -175,8 +156,8 @@ export default function AppSidebar({ ...props }: React.ComponentProps<typeof Sid
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.navMain} />
-        <NavDocuments items={data.documents} />
-        <NavSecondary items={data.navSecondary} className="mt-auto" />
+        {/* <NavDocuments items={data.documents} /> */}
+        {/* <NavSecondary items={data.navSecondary} className="mt-auto" /> */}
       </SidebarContent>
       <SidebarFooter>
         <NavUser user={data.user} />

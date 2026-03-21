@@ -4,7 +4,7 @@ import Features from '@/components/sections/Features'
 
 function page() {
   return (
-    <main className='bg-dark w-full min-h-screen'>
+    <main className='bg-dark w-full min-h-screen text-foreground'>
         <Hero />
         <Features />
     </main>

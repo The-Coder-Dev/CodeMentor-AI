@@ -37,7 +37,7 @@ export default function AuthLayout({
                     </Link>
 
                 </Button>
-                <h2 className="text-2xl font-bold z-1">
+                <h2 className="text-4xl font-bold z-1">
                     {title}
                 </h2>
             </div>

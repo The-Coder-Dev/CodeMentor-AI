@@ -12,16 +12,16 @@ function Hero() {
         <div className="flex items-center flex-col gap-8 text-accent" >
           <TextFlip 
             words={["Python", "JavaScript", "Rust", "C", "C++", "GoLang", "PHP"]} duration={2000}/>
-          <h1 className="text-7xl font-bold font-[poppins]">
+          <h1 className="text-7xl text-foreground font-bold font-[poppins]">
             Debug Smarter, Learn Faster
           </h1>
-          <p className="w-3xl text-center">
+          <p className="w-3xl text-foreground text-center">
             AI-powered debugging and learning for the modern developer. Resolve
             complex bugs and master new languages in seconds with our advanced
             neural engine.
           </p>
           <div className="flex items-center gap-3 font-[inter]">
-            <Button asChild className="bg-green/20">
+            <Button asChild className="bg-green/20 text-foreground">
               <Link href="/">Try now</Link>
             </Button>
           </div>

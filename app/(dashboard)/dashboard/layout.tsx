@@ -9,7 +9,7 @@ export default function DashboardLayout({
 }) {
   return (
     <SidebarProvider>
-      <SidebarTrigger />
+      <SidebarTrigger className="flex md:hidden" />
       <div className="flex w-full h-screen overflow-hidden">
         <TooltipProvider>
           <AppSidebar />

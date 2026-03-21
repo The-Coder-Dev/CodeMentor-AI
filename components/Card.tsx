@@ -1,8 +1,7 @@
 import React from "react";
 import { Bug } from "lucide-react";
 import { GraduationCap } from "lucide-react";
-import { Workflow } from "lucide-react";
-import { Rocket } from "lucide-react";
+
 
 const CardData = [
   {
@@ -30,7 +29,7 @@ const CardData = [
 
 function Card() {
   return (
-    <div className="grid grid-cols-3 gap-6">
+    <div className="grid grid-cols-3 gap-6 text-foreground">
       {CardData.map((item) => {
         const Icon = item.icon;
         return (
@@ -38,11 +37,11 @@ function Card() {
             key={item.id}
             className="p-7 py-15 bg-green/10 rounded-md border border-green/20 flex flex-col gap-3"
           >
-            <Icon size={55} className=" bg-green/20 rounded-sm p-3 text-accent" />
-            <h1 className="text-accent text-2xl font-[sora] font-semibold">
+            <Icon size={55} className=" bg-green/20 rounded-sm p-3" />
+            <h1 className=" text-2xl font-[sora] font-semibold">
               {item.title}
             </h1>
-            <p className="text-accent/70">{item.paragraph}</p>
+            <p className="text-foreground/40">{item.paragraph}</p>
           </div>
         );
       })}
