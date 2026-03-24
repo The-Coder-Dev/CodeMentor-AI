@@ -19,13 +19,13 @@ function Navbar() {
   return (
     <header className="w-full absolute top-0 z-999 px-5">
       <nav className="py-7 w-full mx-auto max-w-380 flex items-center justify-between">
-        <Link href="/" className="text-accent font-[Sora]">
+        <Link href="/" className="text-foreground font-[Sora]">
           CodeMentor AI
         </Link>
 
         {/* Mobile HamBurger Menu */}
         <div
-          className=" md:hidden text-accent bg-white/10 p-1 rounded-sm"
+          className=" md:hidden text-foreground bg-white/10 p-1 rounded-sm"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
@@ -37,7 +37,7 @@ function Navbar() {
             return (
               <div
                 key={item.id}
-                className="text-accent hover:text-gray-400 duration-300"
+                className="text-foreground hover:text-gray-400 duration-300"
               >
                 <Link href={item.url}>{item.title}</Link>
               </div>
@@ -48,8 +48,8 @@ function Navbar() {
         <Show when={"signed-in"}>
           <div className="flex items-center gap-3">
             <Button
-              asChild
-              className="bg-green/40 text-accent border border-green/20"
+              asChild variant="default"
+              className="bg-green/40 hover:bg-green/30 text-foreground border border-green/0"
             >
               <Link href="/dashboard">Go to Dashboard</Link>
             </Button>
@@ -60,11 +60,11 @@ function Navbar() {
 
         <Show when={"signed-out"}>
           <div className="flex gap-2 items-center">
-            <Button asChild className="text-accent bg-transparent hover:bg-transparent ">
+            <Button asChild className="text-foreground bg-transparent hover:bg-transparent ">
               <Link href="/sign-in">Sign In</Link>
             </Button>
 
-            <Button asChild className="text-accent bg-green/30 hover:bg-green/20 transition-colors duration-300">
+            <Button variant="default" asChild className="text-foreground bg-green/30 hover:bg-green/60 transition-colors duration-300">
               <Link href="/sign-up">Get Started</Link>
             </Button>
           </div>

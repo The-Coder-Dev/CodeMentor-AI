@@ -43,12 +43,12 @@ const data = {
   navMain: [
     {
       title: "AI Tutor",
-      url: "#",
+      url: "/ai-tutor",
       icon: IconListDetails,
     },
     {
       title: "Code Visualizer",
-      url: "#",
+      url: "/visualizer",
       icon: IconChartBar,
     }
   ],

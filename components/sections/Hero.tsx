@@ -21,7 +21,7 @@ function Hero() {
             neural engine.
           </p>
           <div className="flex items-center gap-3 font-[inter]">
-            <Button asChild className="bg-green/20 text-foreground">
+            <Button variant="default" asChild className="bg-green/20 text-foreground hover:bg-green/30">
               <Link href="/">Try now</Link>
             </Button>
           </div>
